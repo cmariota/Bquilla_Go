@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-       <meta charset="utf-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-       <title>Login</title>
-       <link rel="stylesheet" href="./styles/login.css" />
-       <link rel="shortcut icon" type="image/jpg" href="./img/logoBquilla.png"/>
-    </head>
-    
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="stylesheet" href="./styles/font.css" />
+    <link rel="shortcut icon" type="image/jpg" href="./img/logoBquilla.png" />
+    <script defer src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
     <section id="pantalla-dividida">
-        <div class ="Izquierda">
+        <div class="Izquierda">
+        </div>
+
+        <div class="Derecha">
+            <h1>Bienvenido de vuelta</h1>
+            <h2 class="h2">Email</h2>
+            <input class="control" type="text" name="usuario" value="Ingresa tu email">
+
+            <h2 class="h2">Contraseña</h2>
+            <input class="control" type="text" name="contraseña" value="Ingresa tu contraseña " >
+<div class="b">
+           <span class="fas fa-eye" ></span>
+        </div>
+            <input class="boton" type="submit" name="" value="Iniciar sesión">
+            <h2 class="h3">Ingresa con</h2>
+
+            <div class="link">
+                <a href="">
+                    <i class="fab fa-google"></i> Google
+                </a>
+
+                <a href="">
+                    <i class="fab fa-facebook-f"></i>  Facebook
+                </a>
             </div>
-            
-                <div class ="Derecha">
-                    <h1>Bienvenido de vuelta</h1>
-                       <h2 class="h2">Email</h2>
-                        <input  class="control" type="text" name="usuario" value= "Ingresa tu email">
+            <div class="link2">
+                <h4 class="h4">¿Todavia no tienes una cuenta?<a href="" class="h5">Crea una ahora</a></h4>
+            </div>
 
-                        <h2 class="h2">Contraseña</h2> 
 
-                        <input class="control" type="text" name="contraseña" value="Ingresa tu contraseña">
-                        <input class="boton" type="submit" name="" value="Iniciar sesión">
-                        <h2 class="h3">Ingresa con</h2>
-                    
-                    <div class="link">
-                        <a href="">Google </a>
 
-                        <a href="">Facebook</a>
-                </div>
-                <div class="link2">
-                    <h4 class="h4">¿Todavia no tienes una cuenta?<a href="" class="h5">Crea una ahora</a></h4>                </div>
-               
-                
-                   
-                </div>
-            
-       
+        </div>
+
+
     </section>
-    </body>
-    
+</body>
+
 
 </html>
