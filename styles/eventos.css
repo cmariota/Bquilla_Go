@@ -1,0 +1,256 @@
+:root{
+    --fuenteHeading: 'Jost', sans-serif;
+    --moztasa: #FEBB08;
+    --negro: #000000;
+    --rojo: #A12428;
+    --blanco: #fff;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px*/
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteHeading);
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+}
+
+/* Globales */
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+    margin: 0;
+}
+p{
+    font-family: var(--fuenteHeading);
+    font-size: 400;
+    margin: 0;
+}
+
+/* Contenedor */
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header */
+.header{
+    background-image: url(../images/eventos/Eventos\ 1.png);
+    height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header__texto{
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 10rem;
+}
+@media (max-width: 768px) {
+    .header__texto{
+        margin-top: 28rem;
+    }
+    .header{
+        height: 70rem;
+    }
+}
+.header__texto h2{
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+@media (max-width: 768px ) {
+    .header__texto h2{
+        font-size: 5rem;
+    }
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+@media (max-width: 768px ) {
+    .barra{
+        flex-direction: column;
+    }
+}
+.navegacion{
+    /* background: chocolate;    */
+    display: flex;
+    align-items: center;
+}
+.navegacion a{
+    /* margin-right: 2.5rem; */
+    margin: 0 2.5rem 0 0;
+    color: var(--negro);
+    font-size: 2rem;
+    width: 50%;
+}
+.navegacion a:hover{
+    color: var(--blanco);
+}
+.navegacion .navegacion__enlace:last-child{
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .navegacion .navegacion__enlace:last-child{
+        margin-top: 0px;
+        margin-left: 26px;
+    }
+}
+.barra>a{
+    margin: 0;
+}
+.cont-logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.logo img{
+    /* margin: 0; */
+    margin-top: 20px;
+    width: 195.281px;
+    height: 75.016px;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .logo img{
+       width: 170.094px;
+       height: 75.016px;
+       margin: initial;
+    }
+    .navegacion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Frase */
+.frase{
+    background: var(--negro);
+    height: 15rem;
+}
+.cont-frase{
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-frase{
+    text-align: center;
+}
+.contenedor-frase h2{
+    color: var(--moztasa);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.contenedor-frase h3{
+    color: var(--moztasa);
+}
+
+/* Eventos destacados */
+.cont-eventos{
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+/* flechas */
+.arrow-left{
+    position: absolute;
+    width: 4%;
+    left: 0;
+    top: 50%;
+}
+.arrow-right{
+    width: 4%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+@media (max-width: 768px) {
+    .arrow-left{
+        visibility: hidden;
+    }
+    .arrow-right{
+        visibility: hidden;
+    }
+}
+
+/* Eventos */
+.c-eventos{
+    text-align: center;
+}
+.c-eventos > h2{
+    text-align: center;
+    padding: 3rem 0;
+    text-transform: uppercase;
+}
+.eventos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+@media (max-width: 768px ) {
+    .eventos{
+        grid-template-columns: 1fr;
+    }
+}
+.evento{
+    background: var(--moztasa);
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    border-radius: 3rem;
+}
+/* .evento:hover{
+    cursor: pointer;
+} */
+.img-evento img{
+    width: 70%;
+}
+.info-evento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-evento h3{
+    margin-top: 2rem;
+    font-weight: normal;
+    color: var(--negro);
+    font-size: 2.3rem;
+}
+.info-evento h3:hover{
+    color: gray;
+}
+
+/* Agenda */
+.cont-agenda{
+    padding: 5rem 0;
+}
+.c-agenda .titulo-agenda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.titulo-agenda h2{
+    text-transform: uppercase;
+}
+/* Agenda */
+.schedule-container{
+    background: var(--rojo);
+}

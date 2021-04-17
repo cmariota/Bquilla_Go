@@ -62,7 +62,8 @@ p{
     }
 }
 .header__texto h2{
-    font-size: 9rem;
+    font-size: 7rem;
+    text-transform: uppercase;
 }
 .header__texto h3{
     font-size: 3rem;
