@@ -1,0 +1,250 @@
+:root{
+    --fuenteHeading: 'Jost', sans-serif;
+    --moztasa: #FEBB08;
+    --negro: #000000;
+    --rojo: #A12428;
+    --blanco: #fff;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px*/
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteHeading);
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+}
+
+/* Globales */
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+    margin: 0;
+}
+p{
+    font-family: var(--fuenteHeading);
+    font-size: 400;
+    margin: 0;
+}
+
+/* Contenedor */
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+}
+/* header */
+.header{
+    background-image: url(../images/noticias/fondo.jpg);
+    height: 50rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+.header__texto{
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 10rem;
+}
+@media (max-width: 768px) {
+    .header__texto{
+        margin-top: 28rem;
+    }
+    .header{
+        height: 70rem;
+    }
+}
+.header__texto h2{
+    font-size: 9rem;
+}
+.header__texto h3{
+    font-size: 3rem;
+}
+
+@media (max-width: 768px ) {
+    .header__texto h2{
+        font-size: 5rem;
+    }
+    .header__texto h3{
+        font-size: 2rem;
+    }
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+@media (max-width: 768px ) {
+    .barra{
+        flex-direction: column;
+    }
+}
+.navegacion{
+    /* background: chocolate;    */
+    display: flex;
+    align-items: center;
+}
+.navegacion a{
+    /* margin-right: 2.5rem; */
+    margin: 0 2.5rem 0 0;
+    color: var(--negro);
+    font-size: 2rem;
+    width: 50%;
+}
+.navegacion a:hover{
+    color: var(--blanco);
+}
+.navegacion .navegacion__enlace:last-child{
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .navegacion .navegacion__enlace:last-child{
+        margin-top: 0px;
+        margin-left: 26px;
+    }
+}
+.barra>a{
+    margin: 0;
+}
+.cont-logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.logo img{
+    /* margin: 0; */
+    margin-top: 20px;
+    width: 195.281px;
+    height: 75.016px;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .logo img{
+       width: 170.094px;
+       height: 75.016px;
+       margin: initial;
+    }
+    .navegacion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.informacion-botones{
+    height: 2rem;
+    padding: 2rem 0rem;
+}
+.informacion-botones .boton{
+    font-family: var(--fuenteHeading);
+    padding: 1rem 3rem;
+    color: var(--blanco);
+    background: var(--moztasa);
+    border-radius: 4rem;
+} 
+.informacion-botones .boton:hover{
+    cursor: pointer;
+    background: gray;
+}
+
+@media (max-width: 768px) {
+    .informacion-botones{
+        display: flex;
+        flex-direction: column;
+    }
+    .informacion-botones .boton{
+        margin-bottom: .5rem;
+    }
+}
+/* noticias section */
+
+
+.titulo{
+    background: var(--moztasa);
+    height: 15rem;
+}
+
+.Contenedor-noticia{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenedor-heater-noticia{
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-titulo{
+    text-align: center;
+}
+
+.contenedor-titulo h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.noticias{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 1000px;
+}
+
+.noticia{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba(206, 205, 205, 0.911);
+}
+
+.texto-noticia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 25px;
+}
+
+
+
+footer{
+    background: var(--negro);
+}
+.logo-footer{
+    text-align: center;
+}
+.logo-footer img{
+    width: 170.094px;
+    height: 75.016px;
+    margin-top: 2rem;
+}
+.logos-footer{
+    text-align: center;
+}
+footer h3{
+    color: var(--blanco);
+    font-weight: normal;
+    text-align: center;
+    padding: 2rem 0;
+}
+
