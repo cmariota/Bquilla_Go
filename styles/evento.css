@@ -1,0 +1,232 @@
+:root{
+    --fuenteHeading: 'Jost', sans-serif;
+    --moztasa: #FEBB08;
+    --negro: #000000;
+    --rojo: #A12428;
+    --blanco: #fff;
+    --azul: #3FB8EA;
+    --gris: #C4C4C4;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px*/
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuenteHeading);
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+}
+
+/* Globales */
+a{
+    text-decoration: none;
+    font-family: var(--fuenteHeading);
+}
+h1,h2,h3,h4{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+    margin: 0;
+}
+p{
+    font-family: var(--fuenteHeading);
+    font-size: 400;
+    margin: 0;
+}
+
+/* Contenedor */
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header */
+.header{
+    background: var(--negro);
+    height: 6rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+@media (max-width: 768px) {
+    .header{
+        height: 32rem;
+    }
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+}
+@media (max-width: 768px ) {
+    .barra{
+        flex-direction: column;
+    }
+}
+.navegacion{
+    /* background: chocolate;    */
+    display: flex;
+    align-items: center;
+}
+.navegacion a{
+    /* margin-right: 2.5rem; */
+    margin: 0 2.5rem 0 0;
+    color: var(--blanco);
+    font-size: 2rem;
+    width: 50%;
+}
+.navegacion a:hover{
+    color: #C4C4C4;
+}
+.navegacion .navegacion__enlace:last-child{
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .navegacion .navegacion__enlace:last-child{
+        margin-top: 0px;
+        margin-left: 26px;
+    }
+}
+.barra>a{
+    margin: 0;
+}
+.cont-logo{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.logo img{
+    /* margin: 0; */
+    margin-top: 20px;
+    width: 195.281px;
+    height: 75.016px;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .logo img{
+       width: 170.094px;
+       height: 75.016px;
+       margin: initial;
+    }
+    .navegacion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* PLANTILLA INFORMACIÓN */
+.titulo-info h2{
+    margin-top: 2rem;
+    font-size: 3.5rem;
+}
+.estrellas{
+    display: flex;
+    align-items: center;
+}
+.estrellas p{
+    padding-top: .3rem;
+    margin-left: .2rem;
+}
+/* Información del evento */
+.info-evento-all{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+@media (max-width: 768px) {
+    .info-evento-all{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+    }
+}
+.imagen-evento{
+    background: var(--azul);
+    position: relative;
+}
+.imagen-evento .imagen{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 95%;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 70%);
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.info-evento p{
+    text-align: justify;
+}
+.ubicacionYcosto{
+    display: flex;
+}
+.ubicacionYcosto .costo{
+    margin-left: 4rem;
+}
+.cont-boton{
+    display: flex;
+    justify-content: center;
+}
+
+.info-evento .boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: var(--negro);
+    margin-bottom: 3rem;
+    background: var(--gris);
+    padding: 0 3rem;
+    border-radius: 5rem;
+    width: 50%;
+}
+@media (max-width: 768px) {
+    .info-evento .boton{
+        width: 90%;
+    }
+}
+.info-evento .boton:hover{
+    cursor: pointer;
+    color: var(--azul);
+}
+/* footer  */
+footer{
+    background: var(--negro);
+}
+.logo-footer{
+    text-align: center;
+}
+.logo-footer img{
+    width: 170.094px;
+    height: 75.016px;
+    margin-top: 2rem;
+}
+.logos-footer{
+    text-align: center;
+}
+footer h3{
+    color: var(--blanco);
+    font-weight: normal;
+    text-align: center;
+    padding: 2rem 0;
+}
