@@ -138,9 +138,9 @@ p{
         align-content: center;
     }
     .logo img{
-       width: 170.094px;
-       height: 75.016px;
-       margin: initial;
+    width: 170.094px;
+    height: 75.016px;
+    margin: initial;
     }
     .navegacion{
         flex-direction: column;
